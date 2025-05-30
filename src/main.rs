@@ -57,6 +57,30 @@ use std::{fmt::format, string};
     }
 
 fn main() {
-   
+    
+    let book1 = Book::new("fitch", "fitect community".to_string(), 40, Genre::Fiction);
+    let book2 = Book::new("fitect admin", "sir gearge".to_string(), 12, Genre::Mystery);
+    let book3 = Book::new(
+        "fitect student",
+        "Mr obed".to_string(),
+        540,
+        Genre::ScienceFiction,
+    );
+
+    let book4 = Book::new(
+        "rick dad poor dad",
+        "kelvin".to_string(),
+        40,
+        Genre::Fiction,
+    );
+    let mut books = vec![book1, book2, book3, book4];
+
+    books[2].checked();
+    books[3].checked();
+    books[2].underRepair();
+    let bookinfo = books[1].bookInfo();
+    books[3].can_be_borrowed();
+    books[3].genre();
+    // println!("book 1 {:#?}",bookinfo);
 
 }
