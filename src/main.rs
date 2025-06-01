@@ -47,7 +47,7 @@ use std::{fmt::format, string};
             let status=self.status;
             let genre=self.genre;
             
-            let fnt=format!("hello the book name is {} by {} it has {} pages", )
+            let fnt=format!("hell the book name is {} by {} it has {} pages, is {}", )
         }
 
         fn can_be_borrowed(&self){
