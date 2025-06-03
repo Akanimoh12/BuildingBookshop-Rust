@@ -58,8 +58,8 @@ use std::{fmt::format, string};
 
 fn main() {
     
-    let book1 = Book::new("fitch", "fitect community".to_string(), 40, Genre::Fiction);
-    let book2 = Book::new("fitect admin", "sir gearge".to_string(), 12, Genre::Mystery);
+    let book1 = Book::new("fitch", "fitect".to_string(), 40, Genre::Fiction);
+    let book2 = Book::new("fitect admin", "sir george".to_string(), 12, Genre::Mystery);
     let book3 = Book::new(
         "fitect student",
         "Mr obed".to_string(),
